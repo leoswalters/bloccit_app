@@ -13,6 +13,8 @@ end
 
 group :development do
   gem 'sqlite3'
+  #gem 'pry'
+  #gem 'better_errors'
 end
 
 gem 'bootstrap-sass'
