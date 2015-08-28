@@ -1,2 +1,17 @@
 <h1>Welcome to Bloccit</h1>
 <p>This is the home page for Bloccit.</p>
+
+<% records = Post.all %>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Body</th>
+  </tr>
+<% records.each do |data| %>       #start loop
+  <tr>
+    <td><%= data.title %></td>  #column field1 in your database
+    <td><%= data.body %></td>  #column field2 in your database
+    <td><%= data.id %></td>
+  </tr>
+<% end %>                        #end loop
+</table>
