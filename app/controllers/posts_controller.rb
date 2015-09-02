@@ -1,4 +1,7 @@
 class PostsController < ApplicationController
+
+  skip_before_action :flash_attack, only: [:new, :index]
+
   def index
     @posts = Post.all
   end
@@ -36,4 +39,10 @@ class PostsController < ApplicationController
       render :edit
     end
   end
+
+  protected
+
+
 end
+
+
