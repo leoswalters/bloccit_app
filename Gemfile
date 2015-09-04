@@ -64,5 +64,7 @@ group :development, :test do
 
   gem 'figaro', '1.0'
   #used to store API keys and username/psswd combos
+
+  gem 'pundit'
 end
 
