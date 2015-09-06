@@ -14,5 +14,12 @@ class User < ActiveRecord::Base
     role == 'moderator'
   end
 
+  def member?
+    role == 'member'
+  end
+
+  def guest?
+    role == 'guest'
+  end
 
 end
