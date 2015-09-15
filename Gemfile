@@ -10,10 +10,12 @@ gem 'rails', '4.2.3'
 #authentication
 gem 'devise'
 
+#authorization
+gem 'pundit'
+
 group :production do
   gem 'pg'
   gem 'rails_12factor'
-  gem 'pundit'
 end
 
 group :development do
@@ -65,7 +67,5 @@ group :development, :test do
 
   gem 'figaro', '1.0'
   #used to store API keys and username/psswd combos
-
-  gem 'pundit'
 end
 
