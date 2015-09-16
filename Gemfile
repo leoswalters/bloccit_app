@@ -13,6 +13,9 @@ gem 'devise'
 #authorization
 gem 'pundit'
 
+#enable markdown editing
+gem 'redcarpet'
+
 group :production do
   gem 'pg'
   gem 'rails_12factor'
