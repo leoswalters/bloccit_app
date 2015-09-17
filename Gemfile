@@ -16,6 +16,13 @@ gem 'pundit'
 #enable markdown editing
 gem 'redcarpet'
 
+#add ability to upload an avatar/img
+gem 'carrierwave'
+gem 'mini_magick'
+
+#enable easily upload to AWS
+gem 'fog'
+
 group :production do
   gem 'pg'
   gem 'rails_12factor'
