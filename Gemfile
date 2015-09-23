@@ -16,6 +16,9 @@ gem 'pundit'
 #enable markdown editing
 gem 'redcarpet'
 
+#add pagination
+gem 'will_paginate', '~> 3.0.5'
+
 #add ability to upload an avatar/img
 gem 'carrierwave'
 gem 'mini_magick'
