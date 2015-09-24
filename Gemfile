@@ -19,6 +19,9 @@ gem 'redcarpet'
 #add pagination
 gem 'will_paginate', '~> 3.0.5'
 
+#add styling for pagination
+gem 'will_paginate-bootstrap'
+
 #add ability to upload an avatar/img
 gem 'carrierwave'
 gem 'mini_magick'
