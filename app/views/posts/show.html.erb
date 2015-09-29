@@ -9,6 +9,9 @@
       <%= @post.user.name %>
     </small>
     <p><%= markdown_to_html @post.body %></p>
+    <%= render template: "comments/_form", locals: {topic: @topic, post: @post} %>
+    <%= render template: "comments/_comment", locals: {comments: @post
+      .comments} %>
   </div>
   <div class="col-md-4">
     <% if policy(@post).edit? %>
@@ -16,8 +19,3 @@
     <% end %>
   </div>
 </div>
-
-
-
-
-

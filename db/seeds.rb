@@ -40,10 +40,10 @@ end
 
 posts = Post.all
 
-100.times do
+101.times do
   Comment.create!(
-    #user: users.sample,
     post: posts.sample,
+    user: users.sample,
     body: Faker::Lorem.paragraph
     )
 end
